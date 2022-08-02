@@ -33,7 +33,9 @@ const uploadSampleDocument = async () => {
 const startSignature = async (documentId) => {
 
     const requestBody = JSON.stringify({
-        documents: [ { documentId: documentId } ],
+        documents: [
+            { documentId }
+        ],
         testMode: true,
         signers: [
             {
